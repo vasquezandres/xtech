@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es-PA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Xtech Panamá | Distribuidor de Accesorios Tecnológicos en Panamá</title>
+  <meta name="description" content="Xtech Panamá: accesorios tecnológicos para hogar y oficina. Teclados, mouse, audífonos, webcams, cables y más. Sitio en construcción; pronto catálogo y disponibilidad en Panamá." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://xtech.com.pa/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:site_name" content="Xtech Panamá" />
+  <meta property="og:title" content="Xtech Panamá | Distribuidor de Accesorios Tecnológicos en Panamá" />
+  <meta property="og:description" content="Teclados, mouse, audífonos, webcams, cables y más. Sitio en construcción; pronto catálogo y disponibilidad en Panamá." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xtech.com.pa/" />
+  <meta property="og:image" content="https://cdn.xtech.com.pa/xtech.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://cdn.xtech.com.pa/xtech.webp" />
+
+  <!-- Performance -->
+  <link rel="preload" as="image" href="https://cdn.xtech.com.pa/xtech.webp" type="image/webp" />
+  <link rel="dns-prefetch" href="https://cdn.xtech.com.pa" />
+  <link rel="preconnect" href="https://cdn.xtech.com.pa" crossorigin />
+
+  <!-- Basic styling -->
+  <style>
+    :root{
+      --bg1:#0b0f1a;
+      --bg2:#101827;
+      --card:#0f172a;
+      --text:#e5e7eb;
+      --muted:#a1a1aa;
+      --line:rgba(255,255,255,.10);
+      --accent:#60a5fa;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 700px at 20% 10%, rgba(96,165,250,.25), transparent 55%),
+                  radial-gradient(900px 600px at 80% 30%, rgba(34,197,94,.14), transparent 55%),
+                  linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .wrap{
+      width:min(980px, 100%);
+    }
+    .card{
+      border:1px solid var(--line);
+      background: rgba(15,23,42,.72);
+      backdrop-filter: blur(10px);
+      border-radius:22px;
+      padding:28px;
+      box-shadow: 0 16px 60px rgba(0,0,0,.35);
+    }
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .brand{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      min-width:260px;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:14px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      padding:10px;
+    }
+    .brand h1{
+      margin:0;
+      font-size:1.25rem;
+      letter-spacing:.2px;
+    }
+    .brand p{
+      margin:2px 0 0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .pill{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+      font-size:.92rem;
+      white-space:nowrap;
+    }
+    .pill b{color:var(--text); font-weight:600}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.4fr .9fr;
+      gap:22px;
+      margin-top:22px;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+    }
+    h2{
+      margin:0 0 10px;
+      font-size:2rem;
+      line-height:1.15;
+    }
+    .lead{
+      margin:0 0 16px;
+      color:var(--muted);
+      font-size:1.03rem;
+      line-height:1.6;
+    }
+    .kws{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:14px 0 0;
+    }
+    .tag{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:.9rem;
+    }
+    .box{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:18px;
+      padding:18px;
+    }
+    .box h3{
+      margin:0 0 10px;
+      font-size:1.05rem;
+    }
+    ul{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+      line-height:1.7;
+    }
+    .cta{
+      margin-top:14px;
+      border-top:1px solid var(--line);
+      padding-top:14px;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .cta a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+    .cta a:hover{ text-decoration:underline; }
+    footer{
+      margin-top:16px;
+      color:rgba(229,231,235,.55);
+      font-size:.86rem;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:space-between;
+    }
+    .sr-only{
+      position:absolute;
+      width:1px;height:1px;
+      padding:0;margin:-1px;
+      overflow:hidden;clip:rect(0,0,0,0);
+      white-space:nowrap;border:0;
+    }
+  </style>
+
+  <!-- Structured Data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Xtech Panamá",
+    "url": "https://xtech.com.pa/",
+    "logo": "https://cdn.xtech.com.pa/xtech.webp",
+    "description": "Distribución y disponibilidad de accesorios tecnológicos Xtech en Panamá. Próximamente catálogo.",
+    "sameAs": []
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Xtech Panamá",
+    "url": "https://xtech.com.pa/",
+    "inLanguage": "es-PA"
+  }
+  </script>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card" aria-label="Xtech Panamá - Sitio en construcción">
+      <header>
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <img src="https://cdn.xtech.com.pa/xtech.webp" alt="" width="56" height="56" loading="eager" decoding="async">
+          </div>
+          <div>
+            <h1>Xtech Panamá</h1>
+            <p>Accesorios tecnológicos • Disponibilidad en Panamá</p>
+          </div>
+        </div>
+
+        <div class="pill" role="status" aria-live="polite">
+          <span aria-hidden="true">🚧</span>
+          <span><b>Sitio en construcción</b> • Próximamente</span>
+        </div>
+      </header>
+
+      <div class="grid">
+        <div>
+          <h2>Distribuidor de accesorios Xtech en Panamá</h2>
+          <p class="lead">
+            Estamos preparando el portal de <strong>Xtech Panamá</strong> con catálogo, fichas de producto y disponibilidad local.
+            Si estás buscando <strong>Xtech en Panamá</strong> (teclados, mouse, audífonos, webcams, cables y más),
+            este será tu punto de referencia.
+          </p>
+
+          <div class="box" aria-label="Qué encontrarás pronto">
+            <h3>¿Qué encontrarás aquí pronto?</h3>
+            <ul>
+              <li>Catálogo por categorías (hogar, oficina, gaming y conectividad).</li>
+              <li>Especificaciones técnicas claras y fotos oficiales.</li>
+              <li>Disponibilidad y presentaciones más comunes en Panamá.</li>
+              <li>Contenido útil: compatibilidad, guías rápidas y recomendaciones.</li>
+            </ul>
+
+            <div class="cta">
+              <strong>Nota:</strong> si quieres agregar WhatsApp, correo o dirección, deja esos datos aquí y lo meto en esta misma página
+              (sin inventar nada).
+            </div>
+          </div>
+
+          <div class="kws" aria-label="Búsquedas frecuentes">
+            <span class="tag">Xtech Panamá</span>
+            <span class="tag">Distribuidor Xtech Panamá</span>
+            <span class="tag">Accesorios Xtech</span>
+            <span class="tag">Teclados Xtech</span>
+            <span class="tag">Mouse Xtech</span>
+            <span class="tag">Audífonos Xtech</span>
+            <span class="tag">Webcams Xtech</span>
+            <span class="tag">Cables y adaptadores</span>
+          </div>
+        </div>
+
+        <aside class="box" aria-label="Acerca de Xtech Panamá">
+          <h3>Sobre Xtech Panamá</h3>
+          <ul>
+            <li>Enfoque en accesorios tecnológicos para uso diario.</li>
+            <li>Soluciones para oficina, estudio y entretenimiento.</li>
+            <li>Pronto: páginas por producto optimizadas para Google.</li>
+          </ul>
+
+          <div class="cta">
+            <div><strong>Dominio:</strong> xtech.com.pa</div>
+            <div><strong>CDN:</strong> cdn.xtech.com.pa</div>
+            <div style="margin-top:10px;">
+              <span class="sr-only">Aviso:</span>
+              Si tu objetivo es posicionar “distribuidor”, esta página ya deja claro el contexto y Google puede indexarla.
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <span>© <span id="y"></span> Xtech Panamá</span>
+        <span></span>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
